@@ -2,29 +2,419 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Funky Dirt | Sri Lankan Funk, Pop &amp; Rap Trio from Colombo</title>
     <meta
       name="description"
-      content="Funky Dirt — Sri Lanka's funkiest trio from Colombo. Creators of Sereppuwa, Ada Ape Thaththa, Hollala & more."
+      content="Funky Dirt is a Sri Lankan funk, pop and rap trio from Colombo, formed in 2007. Stream Sereppuwa, Ada Ape Thaththa and Hollala, or book the band for your event."
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Funky Dirt — Sri Lankan trio from Colombo" />
+    <meta
+      name="keywords"
+      content="Funky Dirt, FunkyDirt, FunKy DirT, Sri Lankan band, Colombo band, Sri Lankan funk band, Sinhala rap, Sereppuwa, Ada Ape Thaththa, Hollala, Watey Gihin, Doppi Nakin, Awidan Yanawa, book a band Sri Lanka, wedding band Colombo, corporate event band Sri Lanka"
+    />
+    <meta name="author" content="Funky Dirt" />
+    <meta name="publisher" content="Funky Dirt" />
+    <meta name="copyright" content="Funky Dirt" />
+    <meta name="rating" content="general" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Indexing + rich result eligibility -->
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="bingbot" content="index, follow, max-image-preview:large" />
+
+    <!-- Canonical + language -->
+    <link rel="canonical" href="https://funkydirtmusic.com/" />
+    <link rel="alternate" hreflang="en" href="https://funkydirtmusic.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://funkydirtmusic.com/" />
+
+    <!-- Local / entity signals -->
+    <meta name="geo.region" content="LK-11" />
+    <meta name="geo.placename" content="Colombo, Sri Lanka" />
+    <meta name="geo.position" content="6.9271;79.8612" />
+    <meta name="ICBM" content="6.9271, 79.8612" />
+
+    <!-- Theme + icons + install -->
+    <meta name="theme-color" content="#f0f0f0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Funky Dirt" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="preload" as="image" href="/logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/feed+json" title="Funky Dirt releases" href="https://funkydirtmusic.com/feed.json" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://funkydirtmusic.com/sitemap.xml" />
+
+    <!-- Social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Funky Dirt" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://funkydirtmusic.com/" />
+    <meta property="og:title" content="Funky Dirt — Sri Lanka's funkiest trio" />
     <meta
       property="og:description"
-      content="A little funky, a little dirty. Creators of Sereppuwa, Ada Ape Thaththa & Hollala."
+      content="Funk, rap and island pop from Colombo. Creators of Sereppuwa, Ada Ape Thaththa and Hollala. Listen now or book the band."
     />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://funkydirtmusic.com/og-image.png" />
+    <meta property="og:image:secure_url" content="https://funkydirtmusic.com/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Funky Dirt — Sri Lankan funk, pop and rap trio from Colombo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Funky Dirt — Sri Lanka's funkiest trio" />
+    <meta
+      name="twitter:description"
+      content="Funk, rap and island pop from Colombo. Stream Sereppuwa, Ada Ape Thaththa and Hollala, or book the band."
+    />
+    <meta name="twitter:image" content="https://funkydirtmusic.com/og-image.png" />
+    <meta name="twitter:image:alt" content="Funky Dirt — Sri Lankan funk, pop and rap trio from Colombo" />
+
+    <!-- Performance hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://open.spotify.com" />
+    <link rel="dns-prefetch" href="https://i.scdn.co" />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+    <link rel="dns-prefetch" href="https://s.ytimg.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Funky Dirt — Sri Lankan trio from Colombo</title>
+
+    <script>
+      // Enables scroll-reveal animations only when JavaScript is available.
+      // Crawlers and no-JS visitors see all content immediately.
+      document.documentElement.classList.add('js')
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://funkydirtmusic.com/#website",
+            "url": "https://funkydirtmusic.com/",
+            "name": "Funky Dirt",
+            "alternateName": ["FunkyDirt", "FunKy DirT"],
+            "description": "The home of Funky Dirt, a Sri Lankan funk, pop and rap trio from Colombo.",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://funkydirtmusic.com/#musicgroup" }
+          },
+          {
+            "@type": "MusicGroup",
+            "@id": "https://funkydirtmusic.com/#musicgroup",
+            "name": "Funky Dirt",
+            "alternateName": ["FunkyDirt", "FunKy DirT", "MACS"],
+            "url": "https://funkydirtmusic.com/",
+            "description": "Funky Dirt is a three-member Sri Lankan funk, pop and rap band from Colombo, formed in 2007 by Mura, Shenal and Ridzy. The trio is known for Sereppuwa, Ada Ape Thaththa, Bus Eke, Watey Gihin, Hollala, Doppi Nakin and Awidan Yanawa with Yohani.",
+            "image": [
+              "https://funkydirtmusic.com/og-image.png",
+              "https://funkydirtmusic.com/logo.png"
+            ],
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://funkydirtmusic.com/#logo",
+              "url": "https://funkydirtmusic.com/logo.png",
+              "caption": "Funky Dirt logo"
+            },
+            "foundingDate": "2007",
+            "foundingLocation": {
+              "@type": "Place",
+              "name": "Colombo, Sri Lanka",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Colombo",
+                "addressCountry": "LK"
+              }
+            },
+            "genre": ["Funk", "Pop", "Dance", "Rap", "Island pop", "Sinhala pop"],
+            "award": ["Best New Artist", "Best Upcoming Artist"],
+            "member": [
+              {
+                "@type": "Person",
+                "@id": "https://funkydirtmusic.com/#mura",
+                "name": "Murshad Huvais",
+                "alternateName": "Mura",
+                "jobTitle": "Vocalist, lyricist and rapper",
+                "description": "The voice and pen of Funky Dirt. Mura writes the lyrics, raps and fronts the stage.",
+                "url": "https://www.instagram.com/mura_funkydirt/",
+                "sameAs": ["https://www.instagram.com/mura_funkydirt/"]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://funkydirtmusic.com/#shenal",
+                "name": "Shenal Maddumage",
+                "alternateName": "Shenal",
+                "jobTitle": "Producer, composer and mixing engineer",
+                "description": "The sonic engineer behind the Funky Dirt sound, responsible for production, mixing and mastering.",
+                "url": "https://www.instagram.com/shenal_funkydirt/",
+                "sameAs": ["https://www.instagram.com/shenal_funkydirt/"]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://funkydirtmusic.com/#ridzy",
+                "name": "Ridzy",
+                "jobTitle": "DJ and beatmaker",
+                "description": "The DJ and beatmaker who brings turntable energy to every Funky Dirt show.",
+                "url": "https://www.instagram.com/ridzy_funkydirt/",
+                "sameAs": ["https://www.instagram.com/ridzy_funkydirt/"]
+              }
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "bookings",
+              "url": "https://funkydirtmusic.com/#contact",
+              "availableLanguage": "English"
+            },
+            "sameAs": [
+              "https://www.youtube.com/@FunkyDirt_Official",
+              "https://www.facebook.com/FunKyDirT/",
+              "https://www.instagram.com/funkydirtofficial/",
+              "https://open.spotify.com/artist/4EmQAPX89Zg1TUUaQut1IC",
+              "https://music.apple.com/us/artist/funky-dirt/787248304",
+              "https://www.deezer.com/en/artist/5431012",
+              "https://soundcloud.com/funkydirt-scmusic"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://funkydirtmusic.com/#webpage",
+            "url": "https://funkydirtmusic.com/",
+            "name": "Funky Dirt | Sri Lankan Funk, Pop & Rap Trio from Colombo",
+            "description": "Funky Dirt is a Sri Lankan funk, pop and rap trio from Colombo, formed in 2007. Stream Sereppuwa, Ada Ape Thaththa and Hollala, or book the band for your event.",
+            "isPartOf": { "@id": "https://funkydirtmusic.com/#website" },
+            "about": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+            "primaryImageOfPage": { "@id": "https://funkydirtmusic.com/#primaryimage" },
+            "inLanguage": "en",
+            "dateModified": "2026-11-04T00:00:00+05:30",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".hero-tag", "#about h2", "#faq h2"]
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://funkydirtmusic.com/#primaryimage",
+            "url": "https://funkydirtmusic.com/og-image.png",
+            "width": 1200,
+            "height": 630,
+            "caption": "Funky Dirt — Sri Lankan funk, pop and rap trio from Colombo"
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://funkydirtmusic.com/#discography",
+            "name": "Funky Dirt selected discography",
+            "itemListOrder": "https://schema.org/ItemListOrderDescending",
+            "numberOfItems": 8,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Sereppuwa",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/5A16odAsBtHavDJs5inAWH",
+                  "datePublished": "2026",
+                  "genre": "Sri Lankan pop"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Oba Dakmen",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/15PTikg4LcYtyEYMtGrzpF",
+                  "datePublished": "2025",
+                  "genre": "Sri Lankan pop"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Watey Gihin",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/4nX06dv7UyO06k0GhUrUkr"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Hollala",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/5WtyN9ckLqovq1ht8d955F"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Doppi Nakin",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/5hnHxcZ6xjJLXPSlRD9VdJ"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Awidan Yanawa",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/7s2fLyvgcSOzuA0rBHuFSE",
+                  "datePublished": "2021"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Bus Eke",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/421PPxgiHyH2qIe7rFxwuP",
+                  "datePublished": "2013"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 8,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Ada Ape Thaththa",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/195l4MSZJXqsuFKa5Eu8vm",
+                  "datePublished": "2012"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://funkydirtmusic.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who are the members of Funky Dirt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Funky Dirt is a trio: Murshad Huvais (Mura) on vocals, lyrics and rap; Shenal Maddumage as producer, composer and mixing engineer; and Ridzy as DJ and beatmaker. Mura, Shenal and Ridzy formed the band in 2007 at Isipathana College, Colombo."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is Funky Dirt from and when did the band form?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Funky Dirt is from Colombo, Sri Lanka. The trio formed in 2007 as a school band called MACS at Isipathana College before becoming Funky Dirt."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What songs is Funky Dirt known for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Funky Dirt is known for Sereppuwa, Ada Ape Thaththa, Bus Eke, Watey Gihin, Hollala, Doppi Nakin, Eka Tamai Meka and Awidan Yanawa with Yohani. Their 2025 single Oba Dakmen was the PPL official theme song."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I listen to Funky Dirt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Stream Funky Dirt on Spotify, Apple Music, YouTube Music and Deezer. Official music videos are on YouTube at @FunkyDirt_Official, and the band posts updates on Instagram and Facebook."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How far in advance should I book Funky Dirt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Book at least 3–6 months in advance for private events such as weddings, and 6–12 months for major events or festivals. The band's calendar fills up quickly during peak season, so earlier is better."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I book Funky Dirt for an event?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Send a booking request through the form on this site. It opens WhatsApp with your event date, venue, event type and expected crowd, and the band replies with availability and a quote."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What performance packages does Funky Dirt offer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Funky Dirt performs at weddings, private parties, birthdays, corporate events, festivals and college gigs. Set length, set list and setup are tailored to the venue and budget."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Funky Dirt perform outside Sri Lanka?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Funky Dirt takes international bookings and regularly performs overseas. International dates need more advance notice for travel and logistics."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What happens if I need to cancel or reschedule?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Contact the band on WhatsApp as early as possible. Funky Dirt will try to reschedule if availability allows, and cancellation terms are agreed up front at booking time."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I request specific songs for my event?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Send a must-play list when booking and the band will work it into the set. Live requests are also welcome on the night when the band knows the song."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <style>
+        .reveal,
+        .reveal-left,
+        .reveal-right,
+        .reveal-scale,
+        .about-grid .about-card,
+        .member-grid .member-card,
+        .gallery-grid .gallery-item {
+          opacity: 1 !important;
+          transform: none !important;
+          filter: none !important;
+        }
+      </style>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

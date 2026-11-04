@@ -133,7 +133,7 @@ const socialLinks = [
 
 function SocialLink({ link }) {
   return (
-    <a href={link.href} target="_blank" rel="noreferrer" aria-label={link.label}>
+    <a href={link.href} target="_blank" rel="me noreferrer" aria-label={`Funky Dirt on ${link.label}`}>
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d={link.path} />
       </svg>
@@ -155,8 +155,13 @@ function Socials({ className }) {
 function Avatar({ member }) {
   if (member.photo) {
     return (
-      <div className="avatar avatar-photo" aria-hidden="true">
-        <img src={member.photo} alt="" />
+      <div className="avatar avatar-photo">
+        <img
+          src={member.photo}
+          alt={`${member.full} of Funky Dirt`}
+          loading="lazy"
+          decoding="async"
+        />
       </div>
     )
   }
@@ -212,7 +217,7 @@ function Nav() {
   return (
     <nav className="nav">
       <a className="brand" href="#top">
-        <img src="/logo.png" alt="FUNKY DIRT" className="brand-logo" />
+        <img src="/logo.png" alt="" className="brand-logo" aria-hidden="true" />
         FUNKY DIRT
       </a>
       <ul className="nav-links">
@@ -316,6 +321,10 @@ function About() {
               Their sound? A melting pot of funk, rap, dance and island pop — with lyrics
               that flip between laugh-out-loud and heartfelt in a single bar.
             </p>
+            <p>
+              Their debut video <strong>Ada Ape Thaththa</strong> earned the band
+              <strong> Best New Artist</strong> and <strong>Best Upcoming Artist</strong> honours.
+            </p>
           </div>
           <div className="about-card">
             <h3>The sound of the city by the sea</h3>
@@ -325,8 +334,7 @@ function About() {
               island — headlining everything from Port City festivals to college stages.
             </p>
             <p>
-              Collaborators include <strong>Yohani</strong>, whose global smash{' '}
-              <strong>Awidan Yanawa</strong> features Shenal &amp; Murshad.
+              Collaborators include <strong>Yohani</strong>, whose global smash <strong>Awidan Yanawa</strong> features Shenal &amp; Murshad.
             </p>
           </div>
       </div>
@@ -523,6 +531,21 @@ function Music() {
             <SpotifyEmbed track={t} key={t.title} />
           ))}
         </div>
+        <ul className="track-list" aria-label="Funky Dirt releases on Spotify">
+          {tracks.map((t, i) => (
+            <li key={t.title}>
+              <a
+                href={`https://open.spotify.com/track/${t.spotify}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="track-index">{String(i + 1).padStart(2, '0')}</span>
+                <span className="track-name">{t.title}</span>
+                <span className="track-cta">Listen on Spotify ↗</span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )
@@ -530,28 +553,44 @@ function Music() {
 
 const faqs = [
   {
+    q: 'Who are the members of Funky Dirt?',
+    a: 'Funky Dirt is a trio: Murshad Huvais (Mura) on vocals, lyrics and rap; Shenal Maddumage as producer, composer and mixing engineer; and Ridzy as DJ and beatmaker. Mura, Shenal and Ridzy formed the band in 2007 at Isipathana College, Colombo.',
+  },
+  {
+    q: 'Where is Funky Dirt from and when did the band form?',
+    a: 'Funky Dirt is from Colombo, Sri Lanka. The trio formed in 2007 as a school band called MACS at Isipathana College before becoming Funky Dirt.',
+  },
+  {
+    q: 'What songs is Funky Dirt known for?',
+    a: 'Funky Dirt is known for Sereppuwa, Ada Ape Thaththa, Bus Eke, Watey Gihin, Hollala, Doppi Nakin, Eka Tamai Meka and Awidan Yanawa with Yohani. Their 2025 single Oba Dakmen was the PPL official theme song.',
+  },
+  {
+    q: 'How can I listen to Funky Dirt?',
+    a: 'Stream Funky Dirt on Spotify, Apple Music, YouTube Music and Deezer. Official music videos are on YouTube at @FunkyDirt_Official, and the band posts updates on Instagram and Facebook.',
+  },
+  {
     q: 'How far in advance should I book Funky Dirt?',
-    a: 'We recommend booking at least 3–6 months in advance for private events such as weddings and 6–12 months for major events or festivals. Our calendar fills up quickly during peak season, so the earlier you reach out, the better your chances of locking in your date.',
+    a: 'Book at least 3–6 months in advance for private events such as weddings, and 6–12 months for major events or festivals. The band\'s calendar fills up quickly during peak season, so earlier is better.',
   },
   {
-    q: 'How can I book the band for an event?',
-    a: 'Send us a booking request through the form above — it goes straight to the band on WhatsApp. Include your event date, venue, type of event and expected crowd, and we\'ll reply with availability and a quote.',
+    q: 'How can I book Funky Dirt for an event?',
+    a: 'Send a booking request through the form on this site. It opens WhatsApp with your event date, venue, event type and expected crowd, and the band replies with availability and a quote.',
   },
   {
-    q: 'What performance packages do you offer?',
-    a: 'We cover weddings, private parties, corporate events, festivals and college gigs. Every event is different, so we tailor each performance — set length, set list and setup — to your venue and budget. Message us with your details and we\'ll put together a package that fits.',
+    q: 'What performance packages does Funky Dirt offer?',
+    a: 'Funky Dirt performs at weddings, private parties, birthdays, corporate events, festivals and college gigs. Set length, set list and setup are tailored to the venue and budget.',
   },
   {
-    q: 'Do you perform outside of Sri Lanka?',
-    a: 'Yes — we regularly take the funk overseas. International bookings just need a bit more advance notice to sort out travel and logistics. Drop us a message on WhatsApp and we\'ll take it from there.',
+    q: 'Does Funky Dirt perform outside Sri Lanka?',
+    a: 'Yes. Funky Dirt takes international bookings and regularly performs overseas. International dates need more advance notice for travel and logistics.',
   },
   {
     q: 'What happens if I need to cancel or reschedule?',
-    a: 'Life happens. Contact us on WhatsApp as early as possible and we\'ll do our best to reschedule your date if availability allows. Cancellation terms are discussed and agreed up front at booking time.',
+    a: 'Contact the band on WhatsApp as early as possible. Funky Dirt will try to reschedule if availability allows, and cancellation terms are agreed up front at booking time.',
   },
   {
     q: 'Can I request specific songs for my event?',
-    a: 'Absolutely. Send us your must-play list when you book and we\'ll work it into the set. We\'re also happy to take live requests on the night — if we know it, we\'ll play it.',
+    a: 'Yes. Send a must-play list when booking and the band will work it into the set. Live requests are also welcome on the night when the band knows the song.',
   },
 ]
 
@@ -754,7 +793,7 @@ function Footer() {
           </p>
         </div>
         <div className="footer-col">
-          <h4>Explore</h4>
+          <h3>Explore</h3>
           <a href="#top">Home</a>
           <a href="#about">About</a>
           <a href="#members">Members</a>
@@ -763,17 +802,17 @@ function Footer() {
           <a href="#contact">Book us</a>
         </div>
         <div className="footer-col">
-          <h4>Legal</h4>
+          <h3>Legal</h3>
           <button type="button" onClick={() => setModal('terms')}>Terms &amp; Conditions</button>
           <button type="button" onClick={() => setModal('privacy')}>Privacy Policy</button>
         </div>
         <div className="footer-col">
-          <h4>Follow</h4>
+          <h3>Follow</h3>
           <Socials className="footer-socials" />
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Funky Dirt ·All music, images &amp; trademarks belong to Funky Dirt and their labels.</p>
+        <p>{`© ${new Date().getFullYear()} Funky Dirt · All music, images & trademarks belong to Funky Dirt and their labels.`}</p>
         <p className="footer-credit">
           Created by <a href="https://dilshanjagoda.github.io" target="_blank" rel="noreferrer">Dilshan Jagoda</a>
         </p>
@@ -795,17 +834,20 @@ function App() {
 
   return (
     <div className="app">
+      <a className="skip-link" href="#main">Skip to content</a>
       <div className={scrolled ? 'nav-holder scrolled' : 'nav-holder'}>
         <Nav />
       </div>
       <Hero />
-      <Socials className="hero-socials" />
-      <About />
-      <Members />
-      <Gallery />
-      <Music />
-      <Contact />
-      <Faq />
+      <main id="main" tabIndex={-1}>
+        <Socials className="hero-socials" />
+        <About />
+        <Members />
+        <Gallery />
+        <Music />
+        <Contact />
+        <Faq />
+      </main>
       <Footer />
     </div>
   )

@@ -1504,7 +1504,7 @@
   max-width: 260px;
 }
 
-.footer-col h4 {
+.footer-col h3 {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -1574,7 +1574,7 @@
 .footer-bottom p {
   max-width: 1120px;
   margin: 0 auto;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.62);
   font-size: 13px;
   text-align: center;
 }
@@ -1677,6 +1677,103 @@
 .legal-close:hover {
   color: #111;
   border-color: rgba(0, 0, 0, 0.3);
+}
+
+/* ============ ACCESSIBILITY + SEO ============ */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 999;
+  padding: 10px 16px;
+  border-radius: 0 0 8px 0;
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* Crawlable release list shown alongside the Spotify embeds. */
+.track-list {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+}
+
+.track-list a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.55);
+  color: #111;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s, border-color 0.2s;
+}
+
+.track-list a:hover,
+.track-list a:focus-visible {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.track-index {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  font-variant-numeric: tabular-nums;
+}
+
+.track-name {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.track-cta {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #555;
+  white-space: nowrap;
+}
+
+/* No-JS visitors and crawlers should never see animation-hidden content. */
+html:not(.js) .reveal,
+html:not(.js) .reveal-left,
+html:not(.js) .reveal-right,
+html:not(.js) .reveal-scale,
+html:not(.js) .about-grid .about-card,
+html:not(.js) .member-grid .member-card,
+html:not(.js) .gallery-grid .gallery-item {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale,
+  .about-grid .about-card,
+  .member-grid .member-card,
+  .gallery-grid .gallery-item {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
