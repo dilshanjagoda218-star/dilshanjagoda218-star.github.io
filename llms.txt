@@ -1,0 +1,63 @@
+# Funky Dirt
+
+> Funky Dirt is a three-member Sri Lankan funk, pop and rap band from Colombo, formed in 2007 by Mura, Shenal and Ridzy. They are known for Sereppuwa, Ada Ape Thaththa, Bus Eke, Watey Gihin, Hollala, Doppi Nakin and Awidan Yanawa with Yohani.
+
+Canonical website: https://funkydirtmusic.com/
+This is an unofficial, fan-made information site. Official music and updates are published through the band's verified channels listed below.
+
+## Key facts
+
+- Official name: Funky Dirt (also written FunkyDirt and FunKy DirT)
+- Origin: Colombo, Sri Lanka
+- Formed: 2007 at Isipathana College, originally as a school band called MACS
+- Members: Murshad Huvais "Mura" (vocals, lyrics, rap), Shenal Maddumage (producer, composer, mixing), Ridzy (DJ, beatmaker)
+- Genres: funk, pop, dance, rap, island pop, Sinhala pop
+- Languages: English and Sinhala
+- Notable awards: Best New Artist and Best Upcoming Artist, following the debut video Ada Ape Thaththa
+- Booking: weddings, private parties, birthdays, corporate events, festivals, college gigs and international shows
+
+## Members
+
+- [Murshad Huvais (Mura)](https://www.instagram.com/mura_funkydirt/) — vocalist, lyricist and rapper; the voice and pen of Funky Dirt.
+- [Shenal Maddumage](https://www.instagram.com/shenal_funkydirt/) — producer, composer and mixing engineer behind the Funky Dirt sound.
+- [Ridzy](https://www.instagram.com/ridzy_funkydirt/) — DJ and beatmaker; brings turntable energy to every show.
+
+## Selected discography
+
+- [Sereppuwa](https://open.spotify.com/track/5A16odAsBtHavDJs5inAWH) — 2026 single featuring Aruja AJ; lyrics by Murshad Huvais, music by Shenal Maddumage.
+- [Oba Dakmen](https://open.spotify.com/track/15PTikg4LcYtyEYMtGrzpF) — 2025 single and PPL official theme song.
+- [Watey Gihin](https://open.spotify.com/track/4nX06dv7UyO06k0GhUrUkr) — Funky Dirt with Murshad Huvais and Shenal Maddumage.
+- [Hollala (හොල්ලලා)](https://open.spotify.com/track/5WtyN9ckLqovq1ht8d955F) — official lyrics video on YouTube.
+- [Doppi Nakin](https://open.spotify.com/track/5hnHxcZ6xjJLXPSlRD9VdJ) — Funky Dirt single.
+- [Awidan Yanawa](https://open.spotify.com/track/7s2fLyvgcSOzuA0rBHuFSE) — 2021 collaboration with Yohani, featuring Shenal and Murshad.
+- [Bus Eke](https://open.spotify.com/track/421PPxgiHyH2qIe7rFxwuP) — 2013 single and long-running fan favourite.
+- [Ada Ape Thaththa](https://open.spotify.com/track/195l4MSZJXqsuFKa5Eu8vm) — 2012 debut single and award-winning video.
+
+Full discography and facts: [llms-full.txt](https://funkydirtmusic.com/llms-full.txt)
+
+## Booking Funky Dirt
+
+- Best contact: booking form at https://funkydirtmusic.com/#contact, which opens a WhatsApp message to the band.
+- Lead time: 3–6 months for weddings and private events; 6–12 months for major events and festivals.
+- International bookings: accepted, with extra lead time for travel and logistics.
+- Event types: weddings, private parties, birthdays, corporate events, festivals and college gigs.
+- Customisation: set length, set list and technical setup are tailored to the venue and budget.
+
+## Official links
+
+- [YouTube — @FunkyDirt_Official](https://www.youtube.com/@FunkyDirt_Official)
+- [Spotify — Funky Dirt](https://open.spotify.com/artist/4EmQAPX89Zg1TUUaQut1IC)
+- [Apple Music — Funky Dirt](https://music.apple.com/us/artist/funky-dirt/787248304)
+- [Instagram — @funkydirtofficial](https://www.instagram.com/funkydirtofficial/)
+- [Facebook — FunKy DirT](https://www.facebook.com/FunKyDirT/)
+- [Deezer — Funky Dirt](https://www.deezer.com/en/artist/5431012)
+- [SoundCloud — Funky Dirt](https://soundcloud.com/funkydirt-scmusic)
+
+## Machine-readable resources
+
+- [Sitemap](https://funkydirtmusic.com/sitemap.xml)
+- [Structured data](https://funkydirtmusic.com/) — Schema.org MusicGroup, WebSite, WebPage, ItemList and FAQPage
+- [JSON feed](https://funkydirtmusic.com/feed.json)
+- [Robots policy](https://funkydirtmusic.com/robots.txt)
+
+Last updated: 2026-11-04

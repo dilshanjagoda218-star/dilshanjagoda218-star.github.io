@@ -2,30 +2,420 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="./logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Funky Dirt | Sri Lankan Funk, Pop &amp; Rap Trio from Colombo</title>
     <meta
       name="description"
-      content="Funky Dirt — Sri Lanka's funkiest trio from Colombo. Creators of Sereppuwa, Ada Ape Thaththa, Hollala & more."
+      content="Funky Dirt is a Sri Lankan funk, pop and rap trio from Colombo, formed in 2007. Stream Sereppuwa, Ada Ape Thaththa and Hollala, or book the band for your event."
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Funky Dirt — Sri Lankan trio from Colombo" />
+    <meta
+      name="keywords"
+      content="Funky Dirt, FunkyDirt, FunKy DirT, Sri Lankan band, Colombo band, Sri Lankan funk band, Sinhala rap, Sereppuwa, Ada Ape Thaththa, Hollala, Watey Gihin, Doppi Nakin, Awidan Yanawa, book a band Sri Lanka, wedding band Colombo, corporate event band Sri Lanka"
+    />
+    <meta name="author" content="Funky Dirt" />
+    <meta name="publisher" content="Funky Dirt" />
+    <meta name="copyright" content="Funky Dirt" />
+    <meta name="rating" content="general" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Indexing + rich result eligibility -->
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="bingbot" content="index, follow, max-image-preview:large" />
+
+    <!-- Canonical + language -->
+    <link rel="canonical" href="https://funkydirtmusic.com/" />
+    <link rel="alternate" hreflang="en" href="https://funkydirtmusic.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://funkydirtmusic.com/" />
+
+    <!-- Local / entity signals -->
+    <meta name="geo.region" content="LK-11" />
+    <meta name="geo.placename" content="Colombo, Sri Lanka" />
+    <meta name="geo.position" content="6.9271;79.8612" />
+    <meta name="ICBM" content="6.9271, 79.8612" />
+
+    <!-- Theme + icons + install -->
+    <meta name="theme-color" content="#f0f0f0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Funky Dirt" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="preload" as="image" href="/logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/feed+json" title="Funky Dirt releases" href="https://funkydirtmusic.com/feed.json" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://funkydirtmusic.com/sitemap.xml" />
+
+    <!-- Social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Funky Dirt" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://funkydirtmusic.com/" />
+    <meta property="og:title" content="Funky Dirt — Sri Lanka's funkiest trio" />
     <meta
       property="og:description"
-      content="A little funky, a little dirty. Creators of Sereppuwa, Ada Ape Thaththa & Hollala."
+      content="Funk, rap and island pop from Colombo. Creators of Sereppuwa, Ada Ape Thaththa and Hollala. Listen now or book the band."
     />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://funkydirtmusic.com/og-image.png" />
+    <meta property="og:image:secure_url" content="https://funkydirtmusic.com/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Funky Dirt — Sri Lankan funk, pop and rap trio from Colombo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Funky Dirt — Sri Lanka's funkiest trio" />
+    <meta
+      name="twitter:description"
+      content="Funk, rap and island pop from Colombo. Stream Sereppuwa, Ada Ape Thaththa and Hollala, or book the band."
+    />
+    <meta name="twitter:image" content="https://funkydirtmusic.com/og-image.png" />
+    <meta name="twitter:image:alt" content="Funky Dirt — Sri Lankan funk, pop and rap trio from Colombo" />
+
+    <!-- Performance hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://open.spotify.com" />
+    <link rel="dns-prefetch" href="https://i.scdn.co" />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+    <link rel="dns-prefetch" href="https://s.ytimg.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Funky Dirt — Sri Lankan trio from Colombo</title>
-    <script type="module" crossorigin src="./assets/index-HGc0SAQa.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DkBcIL6R.css">
+
+    <script>
+      // Enables scroll-reveal animations only when JavaScript is available.
+      // Crawlers and no-JS visitors see all content immediately.
+      document.documentElement.classList.add('js')
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://funkydirtmusic.com/#website",
+            "url": "https://funkydirtmusic.com/",
+            "name": "Funky Dirt",
+            "alternateName": ["FunkyDirt", "FunKy DirT"],
+            "description": "The home of Funky Dirt, a Sri Lankan funk, pop and rap trio from Colombo.",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://funkydirtmusic.com/#musicgroup" }
+          },
+          {
+            "@type": "MusicGroup",
+            "@id": "https://funkydirtmusic.com/#musicgroup",
+            "name": "Funky Dirt",
+            "alternateName": ["FunkyDirt", "FunKy DirT", "MACS"],
+            "url": "https://funkydirtmusic.com/",
+            "description": "Funky Dirt is a three-member Sri Lankan funk, pop and rap band from Colombo, formed in 2007 by Mura, Shenal and Ridzy. The trio is known for Sereppuwa, Ada Ape Thaththa, Bus Eke, Watey Gihin, Hollala, Doppi Nakin and Awidan Yanawa with Yohani.",
+            "image": [
+              "https://funkydirtmusic.com/og-image.png",
+              "https://funkydirtmusic.com/logo.png"
+            ],
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://funkydirtmusic.com/#logo",
+              "url": "https://funkydirtmusic.com/logo.png",
+              "caption": "Funky Dirt logo"
+            },
+            "foundingDate": "2007",
+            "foundingLocation": {
+              "@type": "Place",
+              "name": "Colombo, Sri Lanka",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Colombo",
+                "addressCountry": "LK"
+              }
+            },
+            "genre": ["Funk", "Pop", "Dance", "Rap", "Island pop", "Sinhala pop"],
+            "award": ["Best New Artist", "Best Upcoming Artist"],
+            "member": [
+              {
+                "@type": "Person",
+                "@id": "https://funkydirtmusic.com/#mura",
+                "name": "Murshad Huvais",
+                "alternateName": "Mura",
+                "jobTitle": "Vocalist, lyricist and rapper",
+                "description": "The voice and pen of Funky Dirt. Mura writes the lyrics, raps and fronts the stage.",
+                "url": "https://www.instagram.com/mura_funkydirt/",
+                "sameAs": ["https://www.instagram.com/mura_funkydirt/"]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://funkydirtmusic.com/#shenal",
+                "name": "Shenal Maddumage",
+                "alternateName": "Shenal",
+                "jobTitle": "Producer, composer and mixing engineer",
+                "description": "The sonic engineer behind the Funky Dirt sound, responsible for production, mixing and mastering.",
+                "url": "https://www.instagram.com/shenal_funkydirt/",
+                "sameAs": ["https://www.instagram.com/shenal_funkydirt/"]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://funkydirtmusic.com/#ridzy",
+                "name": "Ridzy",
+                "jobTitle": "DJ and beatmaker",
+                "description": "The DJ and beatmaker who brings turntable energy to every Funky Dirt show.",
+                "url": "https://www.instagram.com/ridzy_funkydirt/",
+                "sameAs": ["https://www.instagram.com/ridzy_funkydirt/"]
+              }
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "bookings",
+              "url": "https://funkydirtmusic.com/#contact",
+              "availableLanguage": "English"
+            },
+            "sameAs": [
+              "https://www.youtube.com/@FunkyDirt_Official",
+              "https://www.facebook.com/FunKyDirT/",
+              "https://www.instagram.com/funkydirtofficial/",
+              "https://open.spotify.com/artist/4EmQAPX89Zg1TUUaQut1IC",
+              "https://music.apple.com/us/artist/funky-dirt/787248304",
+              "https://www.deezer.com/en/artist/5431012",
+              "https://soundcloud.com/funkydirt-scmusic"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://funkydirtmusic.com/#webpage",
+            "url": "https://funkydirtmusic.com/",
+            "name": "Funky Dirt | Sri Lankan Funk, Pop & Rap Trio from Colombo",
+            "description": "Funky Dirt is a Sri Lankan funk, pop and rap trio from Colombo, formed in 2007. Stream Sereppuwa, Ada Ape Thaththa and Hollala, or book the band for your event.",
+            "isPartOf": { "@id": "https://funkydirtmusic.com/#website" },
+            "about": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+            "primaryImageOfPage": { "@id": "https://funkydirtmusic.com/#primaryimage" },
+            "inLanguage": "en",
+            "dateModified": "2026-11-04T00:00:00+05:30",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".hero-tag", "#about h2", "#faq h2"]
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://funkydirtmusic.com/#primaryimage",
+            "url": "https://funkydirtmusic.com/og-image.png",
+            "width": 1200,
+            "height": 630,
+            "caption": "Funky Dirt — Sri Lankan funk, pop and rap trio from Colombo"
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://funkydirtmusic.com/#discography",
+            "name": "Funky Dirt selected discography",
+            "itemListOrder": "https://schema.org/ItemListOrderDescending",
+            "numberOfItems": 8,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Sereppuwa",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/5A16odAsBtHavDJs5inAWH",
+                  "datePublished": "2026",
+                  "genre": "Sri Lankan pop"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Oba Dakmen",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/15PTikg4LcYtyEYMtGrzpF",
+                  "datePublished": "2025",
+                  "genre": "Sri Lankan pop"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Watey Gihin",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/4nX06dv7UyO06k0GhUrUkr"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Hollala",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/5WtyN9ckLqovq1ht8d955F"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Doppi Nakin",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/5hnHxcZ6xjJLXPSlRD9VdJ"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Awidan Yanawa",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/7s2fLyvgcSOzuA0rBHuFSE",
+                  "datePublished": "2021"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Bus Eke",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/421PPxgiHyH2qIe7rFxwuP",
+                  "datePublished": "2013"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 8,
+                "item": {
+                  "@type": "MusicRecording",
+                  "name": "Ada Ape Thaththa",
+                  "byArtist": { "@id": "https://funkydirtmusic.com/#musicgroup" },
+                  "url": "https://open.spotify.com/track/195l4MSZJXqsuFKa5Eu8vm",
+                  "datePublished": "2012"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://funkydirtmusic.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who are the members of Funky Dirt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Funky Dirt is a trio: Murshad Huvais (Mura) on vocals, lyrics and rap; Shenal Maddumage as producer, composer and mixing engineer; and Ridzy as DJ and beatmaker. Mura, Shenal and Ridzy formed the band in 2007 at Isipathana College, Colombo."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is Funky Dirt from and when did the band form?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Funky Dirt is from Colombo, Sri Lanka. The trio formed in 2007 as a school band called MACS at Isipathana College before becoming Funky Dirt."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What songs is Funky Dirt known for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Funky Dirt is known for Sereppuwa, Ada Ape Thaththa, Bus Eke, Watey Gihin, Hollala, Doppi Nakin, Eka Tamai Meka and Awidan Yanawa with Yohani. Their 2025 single Oba Dakmen was the PPL official theme song."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I listen to Funky Dirt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Stream Funky Dirt on Spotify, Apple Music, YouTube Music and Deezer. Official music videos are on YouTube at @FunkyDirt_Official, and the band posts updates on Instagram and Facebook."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How far in advance should I book Funky Dirt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Book at least 3–6 months in advance for private events such as weddings, and 6–12 months for major events or festivals. The band's calendar fills up quickly during peak season, so earlier is better."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I book Funky Dirt for an event?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Send a booking request through the form on this site. It opens WhatsApp with your event date, venue, event type and expected crowd, and the band replies with availability and a quote."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What performance packages does Funky Dirt offer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Funky Dirt performs at weddings, private parties, birthdays, corporate events, festivals and college gigs. Set length, set list and setup are tailored to the venue and budget."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Funky Dirt perform outside Sri Lanka?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Funky Dirt takes international bookings and regularly performs overseas. International dates need more advance notice for travel and logistics."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What happens if I need to cancel or reschedule?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Contact the band on WhatsApp as early as possible. Funky Dirt will try to reschedule if availability allows, and cancellation terms are agreed up front at booking time."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I request specific songs for my event?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Send a must-play list when booking and the band will work it into the set. Live requests are also welcome on the night when the band knows the song."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-Cljqo5dY.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-vcMcbbxi.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><div class="app"><a class="skip-link" href="#main">Skip to content</a><div class="nav-holder"><nav class="nav"><a class="brand" href="#top"><img src="/logo.png" alt="" class="brand-logo" aria-hidden="true"/>FUNKY DIRT</a><ul class="nav-links"><li><a href="#top">Home</a></li><li><a href="#about">About</a></li><li><a href="#members">Members</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#music">Music</a></li><li><a href="#contact">Contact</a></li><li><a href="#faq">FAQ</a></li></ul><button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button></nav></div><header id="top" class="hero"><div class="hero-overlay" aria-hidden="true"></div><div class="hero-glow" aria-hidden="true"></div><div class="hero-glow-2" aria-hidden="true"></div><div class="hero-inner"><div class="hero-badge hero-anim-item"><span class="hero-badge-dot"></span>Sri Lankan trio · Colombo</div><h1 class="hero-title"><span class="hero-title-line hero-anim-item">FUNKY</span><span class="hero-title-line hero-title-accent hero-anim-item">DIRT</span></h1><p class="hero-tag hero-anim-item">Turning every stage into a place where music, movement, and madness collide.</p><div class="hero-ctas hero-anim-item"><a class="btn btn-primary" href="#music">Listen now</a><a class="btn btn-ghost-light" href="#contact">Book the band</a></div><ul class="hero-genres hero-anim-item"><li>Funk</li><li>Pop</li><li>Dance</li><li>Rap</li></ul></div><div class="hero-scroll" aria-hidden="true"><span>Scroll</span><div class="hero-scroll-line"></div></div><div class="hero-divider" aria-hidden="true"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C360,120 720,0 1080,64 C1260,96 1380,80 1440,64 L1440,120 L0,120 Z"></path></svg></div></header><main id="main" tabindex="-1"><div class="hero-socials"><a href="https://www.youtube.com/@FunkyDirt_Official" target="_blank" rel="me noreferrer" aria-label="Funky Dirt on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg><span>YouTube</span></a><a href="https://www.facebook.com/FunKyDirT/" target="_blank" rel="me noreferrer" aria-label="Funky Dirt on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg><span>Facebook</span></a><a href="https://www.instagram.com/funkydirtofficial/" target="_blank" rel="me noreferrer" aria-label="Funky Dirt on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg><span>Instagram</span></a><a href="https://open.spotify.com/artist/4EmQAPX89Zg1TUUaQut1IC" target="_blank" rel="me noreferrer" aria-label="Funky Dirt on Spotify"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"></path></svg><span>Spotify</span></a></div><section id="about" class="section about"><div class="section-inner"><div class="reveal" style="transition-delay:0ms"><div class="section-head"><span class="kicker">About</span><h2>Three schoolmates, one groove</h2></div></div><div class="about-grid"><div class="about-card"><h3>From the classroom to the stage</h3><p>Funky Dirt started as a &quot;just for fun&quot; band called <strong>MACS</strong> at Isipathana College, Colombo — before becoming the unmistakable trio known today. Founded by <strong>Mura, Shenal &amp; Ridzy</strong> in 2007, the group is a collection of fun-loving, imaginative and mad-brilliant best friends.</p><p>Their sound? A melting pot of funk, rap, dance and island pop — with lyrics that flip between laugh-out-loud and heartfelt in a single bar.</p><p>Their debut video <strong>Ada Ape Thaththa</strong> earned the band<strong> Best New Artist</strong> and <strong>Best Upcoming Artist</strong> honours.</p></div><div class="about-card"><h3>The sound of the city by the sea</h3><p>From viral anthems like <strong>Sereppuwa</strong> (1.3M+ views) to timeless classics like <strong>Ada Ape Thaththa</strong>, Funky Dirt soundtracks the island — headlining everything from Port City festivals to college stages.</p><p>Collaborators include <strong>Yohani</strong>, whose global smash <strong>Awidan Yanawa</strong> features Shenal &amp; Murshad.</p></div></div><div class="stats"><div class="stat"><span class="stat-value">1.3M+</span><span class="stat-label">Views on Sereppuwa</span></div><div class="stat"><span class="stat-value">2007</span><span class="stat-label">Formed in Colombo</span></div><div class="stat"><span class="stat-value">3</span><span class="stat-label">Lifelong best friends</span></div></div></div></section><section id="members" class="section members"><div class="section-inner"><div class="reveal" style="transition-delay:0ms"><div class="section-head"><span class="kicker">Members</span><h2>The crew</h2></div></div><div class="member-grid"><article class="member-card"><div class="avatar avatar-photo"><img src="data:image/jpeg;base64,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" alt="Murshad Huvais of Funky Dirt" loading="lazy" decoding="async"/></div><h3 class="member-name">Mura</h3><p class="member-full">Murshad Huvais</p><p class="member-role">Vocalist · Lyricist · Rap</p><p class="member-bio">The voice and pen of Funky Dirt. Mura writes the words, drops the rhymes and fronts the stage — from viral one-liners to full love letters in Sinhala.</p><a class="member-social" href="https://www.instagram.com/mura_funkydirt/" target="_blank" rel="noreferrer">@mura_funkydirt</a></article><article class="member-card"><div class="avatar avatar-photo"><img src="/assets/shenal-DlThv0Hg.jpg" alt="Shenal Maddumage of Funky Dirt" loading="lazy" decoding="async"/></div><h3 class="member-name">Shenal</h3><p class="member-full">Shenal Maddumage</p><p class="member-role">Producer · Music · Mixing</p><p class="member-bio">The sonic engineer. Shenal builds every beat, mix and master behind the Funky Dirt sound — the grooves that make Colombo dance.</p><a class="member-social" href="https://www.instagram.com/shenal_funkydirt/" target="_blank" rel="noreferrer">@shenal_funkydirt</a></article><article class="member-card"><div class="avatar avatar-photo"><img src="/assets/ridzy-gq1sTNHU.jpg" alt="Ridzy of Funky Dirt" loading="lazy" decoding="async"/></div><h3 class="member-name">Ridzy</h3><p class="member-full">Ridzy</p><p class="member-role">DJ · Beatmaker · Live Energy</p><p class="member-bio">The vibe setter. Ridzy keeps the party locked with heavy turntable energy that turns every show into a block party.</p><a class="member-social" href="https://www.instagram.com/ridzy_funkydirt/" target="_blank" rel="noreferrer">@ridzy_funkydirt</a></article></div></div></section><section id="gallery" class="section gallery"><div class="section-inner"><div class="reveal" style="transition-delay:0ms"><div class="section-head"><span class="kicker">Gallery</span><h2>Moments with Funky Dirt</h2></div></div><div class="gallery-grid"><button type="button" class="gallery-item"><img src="/assets/gallery-01-D3pzrVJK.webp" alt="Funky Dirt photo 1" loading="lazy"/></button><button type="button" class="gallery-item"><img src="/assets/gallery-02-Crtul-Iv.webp" alt="Funky Dirt photo 2" loading="lazy"/></button><button type="button" class="gallery-item"><img src="/assets/gallery-03-Cn3EtXPd.webp" alt="Funky Dirt photo 3" loading="lazy"/></button><button type="button" class="gallery-item"><img src="/assets/gallery-04-DuW3Zcr0.webp" alt="Funky Dirt photo 4" loading="lazy"/></button><button type="button" class="gallery-item"><img src="/assets/gallery-05-DvBwGlEQ.webp" alt="Funky Dirt photo 5" loading="lazy"/></button><button type="button" class="gallery-item"><img src="/assets/gallery-06-Jnz3cIoK.webp" alt="Funky Dirt photo 6" loading="lazy"/></button></div></div></section><section id="music" class="section music"><div class="section-inner"><div class="section-head"><span class="kicker">Discography</span><h2>Select releases</h2></div><div class="spotify-grid"><div class="spotify-embed"><iframe src="https://open.spotify.com/embed/track/5A16odAsBtHavDJs5inAWH?utm_source=generator&amp;theme=1" title="Sereppuwa on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div><div class="spotify-embed"><iframe src="https://open.spotify.com/embed/track/195l4MSZJXqsuFKa5Eu8vm?utm_source=generator&amp;theme=1" title="Ada Ape Thaththa on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div><div class="spotify-embed"><iframe src="https://open.spotify.com/embed/track/4nX06dv7UyO06k0GhUrUkr?utm_source=generator&amp;theme=1" title="Watey Gihin on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div><div class="spotify-embed"><iframe src="https://open.spotify.com/embed/track/5WtyN9ckLqovq1ht8d955F?utm_source=generator&amp;theme=1" title="Hollala on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div><div class="spotify-embed"><iframe src="https://open.spotify.com/embed/track/5hnHxcZ6xjJLXPSlRD9VdJ?utm_source=generator&amp;theme=1" title="Doppi Nakin on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div><div class="spotify-embed"><iframe src="https://open.spotify.com/embed/track/7s2fLyvgcSOzuA0rBHuFSE?utm_source=generator&amp;theme=1" title="Awidan Yanawa on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div><div class="spotify-embed"><iframe src="https://open.spotify.com/embed/track/421PPxgiHyH2qIe7rFxwuP?utm_source=generator&amp;theme=1" title="Bus Eke on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div></div><ul class="track-list" aria-label="Funky Dirt releases on Spotify"><li><a href="https://open.spotify.com/track/5A16odAsBtHavDJs5inAWH" target="_blank" rel="noreferrer"><span class="track-index">01</span><span class="track-name">Sereppuwa</span><span class="track-cta">Listen on Spotify ↗</span></a></li><li><a href="https://open.spotify.com/track/195l4MSZJXqsuFKa5Eu8vm" target="_blank" rel="noreferrer"><span class="track-index">02</span><span class="track-name">Ada Ape Thaththa</span><span class="track-cta">Listen on Spotify ↗</span></a></li><li><a href="https://open.spotify.com/track/4nX06dv7UyO06k0GhUrUkr" target="_blank" rel="noreferrer"><span class="track-index">03</span><span class="track-name">Watey Gihin</span><span class="track-cta">Listen on Spotify ↗</span></a></li><li><a href="https://open.spotify.com/track/5WtyN9ckLqovq1ht8d955F" target="_blank" rel="noreferrer"><span class="track-index">04</span><span class="track-name">Hollala</span><span class="track-cta">Listen on Spotify ↗</span></a></li><li><a href="https://open.spotify.com/track/5hnHxcZ6xjJLXPSlRD9VdJ" target="_blank" rel="noreferrer"><span class="track-index">05</span><span class="track-name">Doppi Nakin</span><span class="track-cta">Listen on Spotify ↗</span></a></li><li><a href="https://open.spotify.com/track/7s2fLyvgcSOzuA0rBHuFSE" target="_blank" rel="noreferrer"><span class="track-index">06</span><span class="track-name">Awidan Yanawa</span><span class="track-cta">Listen on Spotify ↗</span></a></li><li><a href="https://open.spotify.com/track/421PPxgiHyH2qIe7rFxwuP" target="_blank" rel="noreferrer"><span class="track-index">07</span><span class="track-name">Bus Eke</span><span class="track-cta">Listen on Spotify ↗</span></a></li></ul></div></section><section id="contact" class="section contact"><div class="section-inner"><div class="contact-card"><span class="kicker">Bookings &amp; collabs</span><h2>Book Funky Dirt</h2><p>Gigs, weddings, festivals and corporate events — if it moves, we groove it. Fill in the details and your booking request goes straight to the band on WhatsApp.</p><form class="booking-form"><label class="booking-field"><span>Your name</span><input type="text" required="" placeholder="Jane Perera" value=""/></label><label class="booking-field"><span>Your phone / WhatsApp</span><input type="tel" required="" placeholder="+94 7X XXX XXXX" value=""/></label><label class="booking-field"><span>Event type</span><select><option value="Wedding" selected="">Wedding</option><option value="Private party">Private party</option><option value="Birthday">Birthday</option><option value="Corporate event">Corporate event</option><option value="Festival">Festival</option><option value="College / Gig">College / Gig</option><option value="Other">Other</option></select></label><label class="booking-field"><span>Event date</span><input type="date" value=""/></label><label class="booking-field"><span>Venue / location</span><input type="text" placeholder="e.g. Mount Lavinia Hotel" value=""/></label><label class="booking-field"><span>Expected crowd</span><input type="text" placeholder="e.g. 500 guests" value=""/></label><label class="booking-field"><span>Budget (optional)</span><input type="text" placeholder="e.g. LKR 250,000" value=""/></label><label class="booking-field booking-full"><span>Anything else?</span><textarea placeholder="Set list requests, technical needs, timeline..."></textarea></label><button type="submit" class="btn btn-primary booking-submit">Send booking via WhatsApp</button></form><div class="socials"><a href="https://www.youtube.com/@FunkyDirt_Official" target="_blank" rel="me noreferrer" aria-label="Funky Dirt on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg><span>YouTube</span></a><a href="https://www.facebook.com/FunKyDirT/" target="_blank" rel="me noreferrer" aria-label="Funky Dirt on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg><span>Facebook</span></a><a href="https://www.instagram.com/funkydirtofficial/" target="_blank" rel="me noreferrer" aria-label="Funky Dirt on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg><span>Instagram</span></a><a href="https://open.spotify.com/artist/4EmQAPX89Zg1TUUaQut1IC" target="_blank" rel="me noreferrer" aria-label="Funky Dirt on Spotify"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"></path></svg><span>Spotify</span></a></div></div></div></section><section id="faq" class="section faq"><div class="section-inner"><div class="section-head"><span class="kicker">FAQ</span><h2>Frequently asked questions</h2></div><div class="faq-list"><div class="faq-item open"><button type="button" class="faq-q" aria-expanded="true"><span>Who are the members of Funky Dirt?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p>Funky Dirt is a trio: Murshad Huvais (Mura) on vocals, lyrics and rap; Shenal Maddumage as producer, composer and mixing engineer; and Ridzy as DJ and beatmaker. Mura, Shenal and Ridzy formed the band in 2007 at Isipathana College, Colombo.</p></div></div><div class="faq-item"><button type="button" class="faq-q" aria-expanded="false"><span>Where is Funky Dirt from and when did the band form?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p>Funky Dirt is from Colombo, Sri Lanka. The trio formed in 2007 as a school band called MACS at Isipathana College before becoming Funky Dirt.</p></div></div><div class="faq-item"><button type="button" class="faq-q" aria-expanded="false"><span>What songs is Funky Dirt known for?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p>Funky Dirt is known for Sereppuwa, Ada Ape Thaththa, Bus Eke, Watey Gihin, Hollala, Doppi Nakin, Eka Tamai Meka and Awidan Yanawa with Yohani. Their 2025 single Oba Dakmen was the PPL official theme song.</p></div></div><div class="faq-item"><button type="button" class="faq-q" aria-expanded="false"><span>How can I listen to Funky Dirt?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p>Stream Funky Dirt on Spotify, Apple Music, YouTube Music and Deezer. Official music videos are on YouTube at @FunkyDirt_Official, and the band posts updates on Instagram and Facebook.</p></div></div><div class="faq-item"><button type="button" class="faq-q" aria-expanded="false"><span>How far in advance should I book Funky Dirt?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p>Book at least 3–6 months in advance for private events such as weddings, and 6–12 months for major events or festivals. The band&#x27;s calendar fills up quickly during peak season, so earlier is better.</p></div></div><div class="faq-item"><button type="button" class="faq-q" aria-expanded="false"><span>How can I book Funky Dirt for an event?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p>Send a booking request through the form on this site. It opens WhatsApp with your event date, venue, event type and expected crowd, and the band replies with availability and a quote.</p></div></div><div class="faq-item"><button type="button" class="faq-q" aria-expanded="false"><span>What performance packages does Funky Dirt offer?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p>Funky Dirt performs at weddings, private parties, birthdays, corporate events, festivals and college gigs. Set length, set list and setup are tailored to the venue and budget.</p></div></div><div class="faq-item"><button type="button" class="faq-q" aria-expanded="false"><span>Does Funky Dirt perform outside Sri Lanka?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p>Yes. Funky Dirt takes international bookings and regularly performs overseas. International dates need more advance notice for travel and logistics.</p></div></div><div class="faq-item"><button type="button" class="faq-q" aria-expanded="false"><span>What happens if I need to cancel or reschedule?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p>Contact the band on WhatsApp as early as possible. Funky Dirt will try to reschedule if availability allows, and cancellation terms are agreed up front at booking time.</p></div></div><div class="faq-item"><button type="button" class="faq-q" aria-expanded="false"><span>Can I request specific songs for my event?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p>Yes. Send a must-play list when booking and the band will work it into the set. Live requests are also welcome on the night when the band knows the song.</p></div></div></div></div></section></main><footer class="footer"><div class="footer-inner"><div class="footer-col footer-brand-col"><p class="footer-brand">FUNKY DIRT</p><p class="footer-tag">Three schoolmates, one groove — funk, rap and island pop from Colombo, Sri Lanka.</p></div><div class="footer-col"><h3>Explore</h3><a href="#top">Home</a><a href="#about">About</a><a href="#members">Members</a><a href="#music">Music</a><a href="#faq">FAQ</a><a href="#contact">Book us</a></div><div class="footer-col"><h3>Legal</h3><button type="button">Terms &amp; Conditions</button><button type="button">Privacy Policy</button></div><div class="footer-col"><h3>Follow</h3><div class="footer-socials"><a href="https://www.youtube.com/@FunkyDirt_Official" target="_blank" rel="me noreferrer" aria-label="Funky Dirt on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg><span>YouTube</span></a><a href="https://www.facebook.com/FunKyDirT/" target="_blank" rel="me noreferrer" aria-label="Funky Dirt on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg><span>Facebook</span></a><a href="https://www.instagram.com/funkydirtofficial/" target="_blank" rel="me noreferrer" aria-label="Funky Dirt on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"></path></svg><span>Instagram</span></a><a href="https://open.spotify.com/artist/4EmQAPX89Zg1TUUaQut1IC" target="_blank" rel="me noreferrer" aria-label="Funky Dirt on Spotify"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"></path></svg><span>Spotify</span></a></div></div></div><div class="footer-bottom"><p>© 2026 Funky Dirt · All music, images &amp; trademarks belong to Funky Dirt and their labels.</p><p class="footer-credit">Created by <a href="https://dilshanjagoda.github.io" target="_blank" rel="noreferrer">Dilshan Jagoda</a></p></div></footer></div></div>
+    <noscript>
+      <style>
+        .reveal,
+        .reveal-left,
+        .reveal-right,
+        .reveal-scale,
+        .about-grid .about-card,
+        .member-grid .member-card,
+        .gallery-grid .gallery-item {
+          opacity: 1 !important;
+          transform: none !important;
+          filter: none !important;
+        }
+      </style>
+    </noscript>
   </body>
 </html>
